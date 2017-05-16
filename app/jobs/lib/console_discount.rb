@@ -45,7 +45,7 @@ class ConsoleDiscount
     end
 
     if count > 0
-      # return if Product.last.text.eql? detail
+      return if Product.last.text.eql? detail
       Product.create(name: '', brand: 'nintendo', category: 'videos games - console', text: detail)
       NotificationMailer.mailer(detail).deliver_later
     end
