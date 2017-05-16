@@ -1,0 +1,4 @@
+:schedule:
+  check_discount_job:
+    cron: '0 0 * * * *'   # Runs once per minute
+    class: CheckDiscountJob
